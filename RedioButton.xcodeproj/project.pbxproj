@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EC80864289EC936002F1B14 /* RadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC80863289EC936002F1B14 /* RadioButtonGroup.swift */; };
 		3ED96D91289EAF3500B8F05B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED96D90289EAF3500B8F05B /* AppDelegate.swift */; };
 		3ED96D93289EAF3500B8F05B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED96D92289EAF3500B8F05B /* SceneDelegate.swift */; };
 		3ED96D95289EAF3500B8F05B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED96D94289EAF3500B8F05B /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		3ED96DA8289EAF3600B8F05B /* RedioButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED96DA7289EAF3600B8F05B /* RedioButtonTests.swift */; };
 		3ED96DB2289EAF3600B8F05B /* RedioButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED96DB1289EAF3600B8F05B /* RedioButtonUITests.swift */; };
 		3ED96DB4289EAF3600B8F05B /* RedioButtonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED96DB3289EAF3600B8F05B /* RedioButtonUITestsLaunchTests.swift */; };
+		3ED96DC2289EAF6F00B8F05B /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED96DC1289EAF6F00B8F05B /* RadioButton.swift */; };
+		3ED96DC4289EB84B00B8F05B /* RadioButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED96DC3289EB84B00B8F05B /* RadioButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3EC80863289EC936002F1B14 /* RadioButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonGroup.swift; sourceTree = "<group>"; };
 		3ED96D8D289EAF3500B8F05B /* RedioButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedioButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED96D90289EAF3500B8F05B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ED96D92289EAF3500B8F05B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		3ED96DAD289EAF3600B8F05B /* RedioButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedioButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED96DB1289EAF3600B8F05B /* RedioButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedioButtonUITests.swift; sourceTree = "<group>"; };
 		3ED96DB3289EAF3600B8F05B /* RedioButtonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedioButtonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3ED96DC1289EAF6F00B8F05B /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		3ED96DC3289EB84B00B8F05B /* RadioButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				3ED96D90289EAF3500B8F05B /* AppDelegate.swift */,
+				3ED96DC0289EAF5600B8F05B /* RadioButtonComponent */,
 				3ED96D92289EAF3500B8F05B /* SceneDelegate.swift */,
 				3ED96D94289EAF3500B8F05B /* ViewController.swift */,
 				3ED96D96289EAF3500B8F05B /* Main.storyboard */,
@@ -125,6 +132,16 @@
 				3ED96DB3289EAF3600B8F05B /* RedioButtonUITestsLaunchTests.swift */,
 			);
 			path = RedioButtonUITests;
+			sourceTree = "<group>";
+		};
+		3ED96DC0289EAF5600B8F05B /* RadioButtonComponent */ = {
+			isa = PBXGroup;
+			children = (
+				3ED96DC1289EAF6F00B8F05B /* RadioButton.swift */,
+				3EC80863289EC936002F1B14 /* RadioButtonGroup.swift */,
+				3ED96DC3289EB84B00B8F05B /* RadioButton.xib */,
+			);
+			path = RadioButtonComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +251,7 @@
 				3ED96D9D289EAF3600B8F05B /* LaunchScreen.storyboard in Resources */,
 				3ED96D9A289EAF3600B8F05B /* Assets.xcassets in Resources */,
 				3ED96D98289EAF3500B8F05B /* Main.storyboard in Resources */,
+				3ED96DC4289EB84B00B8F05B /* RadioButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ED96D95289EAF3500B8F05B /* ViewController.swift in Sources */,
+				3EC80864289EC936002F1B14 /* RadioButtonGroup.swift in Sources */,
 				3ED96D91289EAF3500B8F05B /* AppDelegate.swift in Sources */,
 				3ED96D93289EAF3500B8F05B /* SceneDelegate.swift in Sources */,
+				3ED96DC2289EAF6F00B8F05B /* RadioButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

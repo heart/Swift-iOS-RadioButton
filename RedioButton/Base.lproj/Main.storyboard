@@ -1,24 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RedioButton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nSC-ga-3Sd">
+                                <rect key="frame" x="10" y="94" width="394" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LR5-FB-jnB" customClass="RadioButton" customModule="RedioButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IyC-ZV-5lo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Male"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="group" value="gender"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="MALE"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcS-5H-USE" customClass="RadioButton" customModule="RedioButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="394" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="YbU-M8-B3T"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Female"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="group" value="gender"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="FEMALE"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVC-8T-G1V" customClass="RadioButton" customModule="RedioButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="394" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PIz-Tk-3Zw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Unspecify"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="group" value="gender"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="UNSPECIFTY"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gWm-eH-IMH">
+                                <rect key="frame" x="10" y="373" width="394" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-Xn-BdE" customClass="RadioButton" customModule="RedioButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rw2-6x-fzi"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Swift iOS"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="group" value="language"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="SWIFT"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLz-su-rSB" customClass="RadioButton" customModule="RedioButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="394" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PZt-e5-ySH"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Android Kotlin"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="group" value="language"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="KOTLIN"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkM-aK-vOm" customClass="RadioButton" customModule="RedioButton" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="394" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="c3F-CZ-pug"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="label" value="Both"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="group" value="language"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="value" value="BOTH"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5f-sN-8Ce">
+                                <rect key="frame" x="20" y="582" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctD-le-qUR">
+                                <rect key="frame" x="20" y="616" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4o-xx-qdD">
+                                <rect key="frame" x="20" y="655" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lUU-WG-kWI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6g-m4-4Qj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQR-oy-zLh">
+                                <rect key="frame" x="20" y="705" width="374" height="40"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GOb-8a-eLv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="changeValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHW-TE-Tl2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nSC-ga-3Sd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="1oa-Gt-wHZ"/>
+                            <constraint firstItem="q4o-xx-qdD" firstAttribute="top" secondItem="ctD-le-qUR" secondAttribute="bottom" constant="10" id="5Xi-8g-r9E"/>
+                            <constraint firstItem="I5f-sN-8Ce" firstAttribute="top" secondItem="gWm-eH-IMH" secondAttribute="bottom" constant="59" id="810-fD-Lx8"/>
+                            <constraint firstItem="gWm-eH-IMH" firstAttribute="top" secondItem="nSC-ga-3Sd" secondAttribute="bottom" constant="129" id="ArR-se-eDB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nSC-ga-3Sd" secondAttribute="trailing" constant="10" id="EQv-ox-BZQ"/>
+                            <constraint firstItem="vQR-oy-zLh" firstAttribute="top" secondItem="q4o-xx-qdD" secondAttribute="bottom" constant="10" id="HNk-Ls-PpH"/>
+                            <constraint firstItem="ctD-le-qUR" firstAttribute="top" secondItem="I5f-sN-8Ce" secondAttribute="bottom" constant="5" id="QIg-0k-S6o"/>
+                            <constraint firstItem="I5f-sN-8Ce" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vjg-de-SSu"/>
+                            <constraint firstItem="vQR-oy-zLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YtT-cS-uIy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I5f-sN-8Ce" secondAttribute="trailing" constant="20" id="a3z-1T-hie"/>
+                            <constraint firstItem="q4o-xx-qdD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c8j-tY-5Az"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ctD-le-qUR" secondAttribute="trailing" constant="20" id="cR5-jc-fcm"/>
+                            <constraint firstItem="ctD-le-qUR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gta-an-Bld"/>
+                            <constraint firstItem="gWm-eH-IMH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="l2N-on-RUd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gWm-eH-IMH" secondAttribute="trailing" constant="10" id="t3v-kF-qza"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vQR-oy-zLh" secondAttribute="trailing" constant="20" id="vqh-RT-kZJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q4o-xx-qdD" secondAttribute="trailing" constant="20" id="woN-Ib-lX0"/>
+                            <constraint firstItem="nSC-ga-3Sd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="yFT-Vm-hz3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="text1" destination="I5f-sN-8Ce" id="0ug-do-N9a"/>
+                        <outlet property="text2" destination="ctD-le-qUR" id="L7u-q7-VnB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="85.714285714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
